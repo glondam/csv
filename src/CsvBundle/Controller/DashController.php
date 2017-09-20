@@ -30,7 +30,15 @@ class DashController extends Controller
 
 
 
+    /**
+     * @Route("/dashboard01")
+     */
+    public function indexuAction()
+    {
 
+
+        return $this->render('CsvBundle:fos-user:index.html.twig');
+    }
 
 
 }

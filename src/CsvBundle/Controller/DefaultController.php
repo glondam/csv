@@ -107,7 +107,7 @@ class DefaultController extends Controller
             $csva->setdebit($csv["debit"]);
             $csva->setcredit($csv["credit"]);
             $csva->setindex01($fichier);
-
+            $csva->setUser($this->getUser());
 
 
             // Enregistrement de l'objet en vu de son écriture dans la base de données

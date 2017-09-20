@@ -77,6 +77,11 @@ class csv
      */
     private $index03;
 
+    /**
+     * @ORM\ManyToOne(targetEntity="CsvBundle\Entity\User")
+     * @ORM\JoinColumn(name="user_id")
+     */
+    private $user;
 
     /**
      * Get id
@@ -279,5 +284,16 @@ class csv
     {
         return $this->index03;
     }
+
+    public function setUser($user) {
+        $this->user = $user;
+    }
+
+    public function getUser() {
+        return $this->user;
+    }
+
+
+
 }
 
